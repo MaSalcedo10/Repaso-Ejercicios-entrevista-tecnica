@@ -1,18 +1,18 @@
 def fibo(n):
     
     a = 0
-    b = 1 
+    b = 1
     
-    listafibo = [a, b]  
- 
+    lista = [a,b]
+    
     for i in range(2, n):
         c = a + b
-        listafibo.append(c)
-        a = b
-        b = c
-    return listafibo
+        lista.append(c)
+        a,b = b,c
+    return lista
 
-num = int(input("Ingrese un numero: "))
-print(fibo(num))
-
+print(fibo(10))
+    
+    
+    
     
