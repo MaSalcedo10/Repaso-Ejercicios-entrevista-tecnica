@@ -2,9 +2,6 @@ def tablamultiplicar(n):
     
     for i in range(1,11):
         resultado = n * i
-        print(f"{n} X {i} = {resultado}")
+        print(f"{n} x {i} = {resultado}") 
 
-
-
-tablamultiplicar(5)
-    
+tablamultiplicar(int(input("Ingrese un número para ver su tabla de multiplicar: ")))
